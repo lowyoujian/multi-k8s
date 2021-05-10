@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t cygnetops/react-test -f ./client/Dockerfile.dev ./client
+  - docker build -t aiscream/react-test -f ./client/Dockerfile.dev ./client
 
 script:
   - docker run -e CI=true cygnetops/react-test npm test
